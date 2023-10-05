@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio of Arun Vinod K</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.webp" />
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header section -->
+    <section id="header">
+      <div class="header-top">
+        <div class="logo">
+          <a href="#"><span>ArUn P</span>ortfolio</a>
+        </div>
+        <div class="nav-menu">
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">My Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="bottom-left">
+          <h1 class="name">Arun <span>Vinod K</span></h1>
+          <h3 class="profession">-Web Developer</h3>
+          <p class="short-desc">
+            I am a self learned web developer since 2022.I am proficient in web development and designing.
+
+          </p>
+          <a href="assets/Arun Vinod K Resume.pdf" target="_blank" class="btn-cv" download>Download CV</a>
+        </div>
+        <div class="bottom-right">
+          <a href="https://www.instagram.com/arunfloyd_/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/arunfloyd_"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/arunfloyd/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- About section -->
+    <section id="about">
+      <div class="about-left">
+        <img src="assets/SecondPic.webp " alt="user-sideimg" />
+      </div>
+      <div class="about-right">
+        <div class="section-title">
+          <h2 class="sub-title">About Me</h2>
+          <h3 class="title">Web Developer</h3>
+        </div>
+        <p class="desc">
+          An ambitious and self-motivated web
+          developer with a considerable technical skill
+          who possesses self- discipline and ability to
+          work with minimum of supervision. Able to
+          play a key role in website development to
+          ensure maximum accessibility, user experience
+          and usability.
+        </p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+          <p class="tab-links" onclick="openTab('experience')">Experience</p>
+          <p class="tab-links" onclick="openTab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li>
+              <span>Web Development</span><br />Web App development
+            </li>
+            <li><span>Designing</span><br />Designing Web/App interfacest</li>
+            <li><span>Digital Marketing</span><br />Building business using social medias</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li>
+              <span>2023 - 2023</span><br />
+              Self-Study Intern Developer at Brototype
+            </li>
+            <li>
+              <span>2022 - 2023</span><br />International Journal of Innovative Research in Science,
+              Engineering and Technology (IJIRSET)
+
+            </li>
+            <li>
+              <span>2022 - Aug</span><br />Intern Developer at Accent Techno Soft
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li>
+              <span>2019 -2023</span><br />B.E in CSE from Anna University Tamilnadu
+            </li>
+            <li>
+              <span>2017-2019</span><br />HSE in Computer Science from GBHSS Manjeri
+
+            </li>
+            <li>
+              <span>2016-2017</span><br />SSLC from MSP School Malappuram
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Service section -->
+    <section id="service">
+      <div class="section-title">
+        <h2 class="sub-title">My Skills</h2>
+        <h3 class="title">A brief of my skills which i posses</h3>
+      </div>
+      <div class="services">
+        <div>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Web Development</h2>
+          <p>
+            Exploring the Vast Digital Universe: Elevating Web Development to New Heights and Beyond
+          </p>
+        </div>
+        <div>
+          <i class="fa-brands fa-pix"></i>
+          <h2>Web Design</h2>
+          <p>
+            Transforming Pixels into Seamless User Experiences: Elevate Your Web Design Game!
+          </p>
+        </div>
+        <div>
+          <i class=" fa-brands fa-html5"></i>
+          <h2>HTML5</h2>
+          <p>
+            In Love with HTML5 and Web Magic: Crafting Exquisite Web Experiences with a Little HTML5 Wizardr
+          </p>
+        </div>
+        <div>
+          <i class="fa-brands fa-css3-alt"></i>
+          <h2>CSS3</h2>
+          <p>
+            Mastering the Art of Web Styling: Unleashing CSS3 Sorcery for a Little Extra Magic
+          </p>
+        </div>
+        <div>
+          <i class=" fa-brands fa-bootstrap"></i>
+          <h2>Bootstrap</h2>
+          <p>
+            Elevating Web Design with Bootstrap: Crafting Pixel-Perfect Layouts for a Little Extra Flair
+          </p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-house-laptop"></i>
+          <h2>Media Query</h2>
+          <p>
+            Media Queries Mastery: Crafting Responsive Web Designs for Every Device
+          </p>
+        </div>
+        <div>
+          <i class="fa-brands fa-js"></i>
+          <h2>JavaScipt</h2>
+          <p>
+            JavaScript Wizardry: Crafting Dynamic and Interactive Web Experiences
+          </p>
+        </div>
+        <div>
+          <i class="fa-brands fa-java"></i>
+          <h2>Java</h2>
+          <p>
+            Unlocking the Power of Java: Building Scalable and High-Performance Applications
+          </p>
+        </div>
+
+      </div>
+    </section>
+    <!-- Portfolio section -->
+    <section id="portfolio">
+      <div class="section-title">
+        <h2 class="sub-title">My Portfolio</h2>
+        <h3 class="title">Awesome Works</h3>
+        <div class="project-list">
+          <div class="project">
+            <img src="assets/Screenshot from 2023-09-30 15-41-37.webp" alt="project1" />
+            <div class="layer">
+              <h3>Mercelys Ice Cream</h3>
+              <p>
+                Clone Website of Mercelys Ice Cream using HTML and CSS only.
+              </p>
+              <a href="https://arunfloyd.github.io/mercely/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="assets/Screenshot from 2023-09-30 15-43-51.webp" alt="project2" />
+            <div class="layer">
+              <h3>Spotify</h3>
+              <p>
+                Clone Website of Spotify here i used HTML and CSS to develop the website.
+
+              </p>
+              <a href="https://arunfloyd.github.io/spotify/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="assets/3rd.webp" alt="project3" />
+            <div class="layer">
+              <h3>Netflix</h3>
+              <p>
+                In this Website of Netflix clone here it includes HTML ,CSS ,Bootstrap and Media Query.
+              </p>
+              <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial section -->
+    <section id="testimonial">
+      <div class="section-title">
+        <h2 class="sub-title">Testimonial</h2>
+        <h3 class="title">People What Are Saying</h3>
+        <div class="testimonial-list">
+          <div class="review">
+            <i class="fa-solid fa-quote-left"></i>
+            <p class="review-text">
+              Excellent, working with Arun Vinod K and he was great. Thanks to their knowledge and determination our
+              website looks great and functions really good. I am recommend anyone that is looking for a custom website
+              to give him a call , he will guide you to the right direction.
+            </p>
+            <div class="review-by">
+              <div class="img">
+                <img src="assets/0W5A8511 (1).webp" alt="testimonials-img-1" />
+              </div>
+              <div class="info">
+                <h3 class="name">Arungosh K</h3>
+                <h5 class="resignation">Flutter Developer</h5>
+              </div>
+            </div>
+          </div>
+          <div class="review">
+            <i class="fa-solid fa-quote-left"></i>
+            <p class="review-text">
+              You simply cannot find a web designer with the same level of customer service and dedication to
+              perfection anywhere in today's age.
+            </p>
+            <div class="review-by">
+              <div class="img">
+                <img src="assets/Anroop.webp" alt="testimonials-img-2" />
+              </div>
+              <div class="info">
+                <h3 class="name">Anuroop KR</h3>
+                <h5 class="resignation">Web Developer</h5>
+              </div>
+            </div>
+          </div>
+          <div class="review">
+            <i class="fa-solid fa-quote-left"></i>
+            <p class="review-text">
+              The developer is true professional. They understand your vision and make it a reality.
+              The layouts and designs are fantastic.
+            </p>
+            <div class="review-by">
+              <div class="img">
+                <img src="assets/WhatsApp Image 2023-09-30 at 3.58.15 PM.webp" alt="testimonials-img-3" />
+              </div>
+              <div class="info">
+                <h3 class="name">Shijumon P</h3>
+                <h5 class="resignation">MEAN Developer</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section -->
+    <section id="contact">
+      <div class="section-title">
+        <h2 class="sub-title">Contact</h2>
+        <h3 class="title">Get in Touch</h3>
+      </div>
+      <div class="content">
+        <div class="contact-left">
+          <form id="submit-form">
+            <label for="name"></label>
+            <input type="text" id="name" name="Name" placeholder="Your Name" required>
+            <br>
+
+            <label for="email"></label>
+            <input type="email" id="email" name="Email" placeholder="Your Email" required>
+            <br>
+
+            <label for="message"></label>
+            <textarea id="message" name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <br>
+
+            <button type="submit">Send Message <i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+          <!-- <form id="submit-form" action="">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit">
+              Send Message <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form> -->
+        </div>
+        <div class="vl"></div>
+        <div class="contact-right">
+          <div class="col address">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="info">
+              <h2 class="title">Address</h2>
+              <address>Kannath House Pathirikode<br>Elankur P.O Manjeri <br>Malappuram Kerala 676122 </address>
+            </div>
+          </div>
+          <div class="col phone">
+            <i class="fa-solid fa-phone"></i>
+            <div class="info">
+              <h2 class="title">Phone</h2>
+              <p>+91 9497184224</p>
+            </div>
+          </div>
+          <div class="col email">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="info">
+              <h2 class="title">Email</h2>
+              <p>arunfloyd@proton.me</p>
+            </div>
+          </div>
+          <div class="col website">
+            <i class="fa-solid fa-globe"></i>
+            <div class="info">
+              <h2 class="title">Website</h2>
+              <p>www.ArunvinodK_Portfolio.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright ©️ Arun Vinod K |
+          <i class="fa-solid fa-heart"></i>
+
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+  <script>
+    $("#submit-form").submit((e) => {
+      e.preventDefault()
+      $.ajax({
+        url:
+          "https://script.google.com/macros/s/AKfycbyx9pPqevEQ5YPPyyQFr0iP5sC6eCRiyPFPo1J5FD6EyhNwobZRNgJi3_kkmPwOCr0Z/exec",
+        data: $("#submit-form").serialize(),
+        method: "post",
+        success: function (response) {
+          alert("Form submitted successfully")
+          window.location.reload()
+          //window.location.href="https://google.com"
+        },
+        error: function (err) {
+          alert("Something Error")
+
+        }
+      })
+    })
+  </script>
+
+
+</body>
+
+</html>
